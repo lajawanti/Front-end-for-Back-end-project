@@ -33,7 +33,7 @@ class EditNote extends React.Component{
         }
         this.setState({title : '', content : ''});
         axios
-            .put(`http://localhost:3300/api/notes/${this.props.match.params.id}`, editedNote)
+            .put(`http://notes12345.herokuapp.com/api/notes/${this.props.match.params.id}`, editedNote)
             .then(response => this.props.history.push('/notes'))
             .catch(error => console.log(error));
     }
