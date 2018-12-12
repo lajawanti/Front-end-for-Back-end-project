@@ -42,6 +42,8 @@ class NotesDisplay extends React.Component {
         console.log("State from API .. ", this.state.notes);
         return (
             <div className = "note-display-maindiv">
+
+                <h6>Total-notes : {this.state.notes.length}</h6>
            
                 <div className = "notes-list-heading-search"> Your Notes : 
 
