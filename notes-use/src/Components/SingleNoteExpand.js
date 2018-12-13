@@ -14,7 +14,7 @@ class SingleNoteExpand extends React.Component{
 
     componentDidMount() {
         axios
-            .get(`http://notes12345.herokuapp.com/api/notes/${this.props.match.params.id}`)
+            .get(`https://notes12345.herokuapp.com/api/notes/${this.props.match.params.id}`)
             .then(response => {
                 console.log("SingleNteExpand..axios..response  ",response.data);
                 this.setState({ title : response.data[0].title ,
